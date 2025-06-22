@@ -61,6 +61,7 @@ async def _(matcher: Matcher, event: MessageEvent):
         MessageSegment.reply(event.message_id) +
         f"欢迎使用狼人杀小游戏awa\n已将您设置为本群的游戏房主。\n本局设置人数为{num_players}人，未达到人数前无法开始游戏。")
 
+
 # 编写群员加入指令
 join = on_command("加入狼人杀", aliases={"langrensha加入"}, priority=4, block=True)
 @join.handle()
